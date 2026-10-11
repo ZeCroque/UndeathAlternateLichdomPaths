@@ -1,0 +1,5 @@
+[
+    "Data\\Scripts\\UAP_Utility_ModInfo.pex",
+    "Data\\Scripts\\UAP_UpdateQuest_UpdateQuestScript.pex",
+    "Data\\Scripts\\UAP_UpdateQuest_PlayerAliasScript.pex"
+]
