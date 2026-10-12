@@ -28,8 +28,6 @@ ObjectReference Property NecroLichTransformCandle01 Auto
 VisualEffect Property DragonPriestParticlesFX Auto
 Spell Property NecroFrostArmor Auto
 Spell Property DiseaseBrainRot Auto
-ObjectReference Property Target Auto
-ObjectReference Property NecroLichTransformationPhylacteryFX001 Auto
 Actor Property PlayerRef Auto
 Spell Property DiseaseSanguinareVampiris Auto
 EffectShader Property CasterFXS Auto
@@ -41,7 +39,6 @@ Message Property NecroLeftMagicSelectMessage Auto
 FormList Property NecroUCL_OrcRaces Auto
 Spell Property DiseaseRattles Auto
 Spell Property AbLichTransformRitualPotion Auto
-ObjectReference Property NecroLichTransformationPhylacteryLightFX002 Auto
 Perk Property NecroPhylacteryRegenPerk Auto
 Spell Property LichAbility Auto
 GlobalVariable Property NecroLichColorValue Auto
@@ -49,7 +46,6 @@ Spell Property NecroLichTransformationRitual Auto
 GlobalVariable Property pDLC1VQ04SafeToEnter Auto
 GlobalVariable Property PlayerIsVampire Auto
 MiscObject Property NecroVyngaldShroud Auto
-ObjectReference Property NecroLichRitualXMarkerHeading002 Auto
 Sound Property TransformSoundFX Auto
 Explosion Property TransformFXExplosion Auto
 Float Property ShaderDuration = 4.0 Auto
@@ -61,7 +57,6 @@ Sound Property AmbRumbleShake Auto
 Perk Property NecroPlayerLichResistances Auto
 Spell Property LichTransform Auto
 Bool Property Soulbound Auto
-ObjectReference Property NecroLichTransformationPhylacteryLightFX001 Auto
 Message Property NecroUCLUnbindSoulVampMsg Auto
 EffectShader Property MagicEffectShader Auto
 { The Effect Shader we want. }
@@ -76,22 +71,17 @@ VisualEffect Property TargetVFX Auto
 { Visual Effect on Target aiming at Caster }
 Sound Property TransformExplosion02 Auto
 Explosion Property PlayerDeathExplosion Auto
-ObjectReference Property NecroLichTransformRitualTarget001 Auto
 GlobalVariable Property NecroLichModelValue Auto
 Bool Property bSetAlphaZero = True Auto
 { The Effect Shader we want. }
-ObjectReference Property NecroLichRitualXMarkerHeading001 Auto
 Spell Property NecroLichLightningStorm Auto
 Idle Property Bleedout Auto
 Activator Property AshPileObject Auto
 { The object we use as a pile. }
-ObjectReference Property NecroLichTransformationPhylacteryLightFX Auto
-ObjectReference Property NecroLichTransformationPhylacteryFX002 Auto
 Int Property Cycles Auto
 Spell Property NecroImprovedFormPassive Auto
 Faction Property HunterFaction Auto
 Race Property PlayerRace Auto
-ObjectReference Property NecroLichRitualXMarkerHeading Auto
 VisualEffect Property DragonPriestEyeGlowFX Auto
 Spell Property ParalyzeSelf Auto
 Float Property fDelay = 0.75 Auto
@@ -115,17 +105,14 @@ Spell Property AbLichNecroPassive Auto
 Float Property fDelayEnd = 1.65 Auto
 { time to wait before Removing Base Actor }
 MagicEffect Property LichTransformEffect Auto
-Int Property RitualLocation Auto
 MiscObject Property NecroVyngaldShroudWhite Auto
 Spell Property DiseaseBoneBreakFever Auto
 Spell Property Revenant Auto
 EffectShader Property TargetFXS Auto
 { Effect Shader on Target during Soul trap }
 MiscObject Property NecroVyngaldShroudBlack Auto
-ObjectReference Property NecroLichTransformRitualTarget002 Auto
 Quest Property NecroLichRitualQuest Auto
 MagicEffect Property AbLichNecroCooldown Auto
-ObjectReference Property NecroLichTransformationPhylacteryFX Auto
 Explosion Property FXDragonPriestLargeExplosion Auto
 Race Property LichRace Auto
 
@@ -183,30 +170,21 @@ Event OnEffectStart(Actor Target, Actor Caster)
     Else
       NecroLichRaceValue.SetValueInt(0)
     EndIf
-    RitualLocation = (NecroLichRitualQuest as necrolichtrackingquest).InTrigger
-    If RitualLocation == 1
-      Target = NecroLichTransformRitualTarget001
-    ElseIf RitualLocation == 2
-      Target = NecroLichTransformRitualTarget002
-    EndIf
   EndIf
 EndEvent
 
 Event OnUpdate()
+  NecroLichTrackingQuest trackingQuest = NecroLichRitualQuest as NecroLichTrackingQuest
   Float CurrentHealth = PlayerRef.GetActorValuePercentage("health")
-  If PlayerRef.HasMagicEffect(LichTransformRitualPotion) == 1 as Bool && RitualLocation > 0 && Poisoned == False && doOnce == False && Target.IsEnabled() == True && (NecroLichRitualQuest as necrolichtrackingquest).Shroud > 0
+  If PlayerRef.HasMagicEffect(LichTransformRitualPotion) == 1 as Bool && trackingQuest.RitualMarker && Poisoned == False && doOnce == False && trackingQuest.Phylactery.IsEnabled() == True && (NecroLichRitualQuest as necrolichtrackingquest).Shroud > 0
     Game.DisablePlayerControls(True, False, True, False, False, False, False, False, 1)
-    If RitualLocation == 1
-      NecroLichTransformationPhylacteryLightFX001.enable(False)
-    ElseIf RitualLocation == 2
-      NecroLichTransformationPhylacteryLightFX002.enable(False)
-    EndIf
+    trackingQuest.RitualFX.enable(False)
     Utility.Wait(3 as Float)
     Poisoned = True
-  ElseIf PlayerRef.HasMagicEffect(LichTransformRitualPotion) == 1 as Bool && RitualLocation < 1
+  ElseIf PlayerRef.HasMagicEffect(LichTransformRitualPotion) == 1 as Bool && !trackingQuest.RitualMarker
     AbLichTransformRitualPotion.Cast(PlayerRef as ObjectReference, PlayerRef as ObjectReference)
     Debug.Trace("CLASSICAL LICHDOM: Player not in ritual locaton, player KILLED.", 0)
-  ElseIf PlayerRef.HasMagicEffect(LichTransformRitualPotion) == 1 as Bool && Target.IsEnabled() == False
+  ElseIf PlayerRef.HasMagicEffect(LichTransformRitualPotion) == 1 as Bool && trackingQuest.Phylactery.IsEnabled() == False
     AbLichTransformRitualPotion.Cast(PlayerRef as ObjectReference, PlayerRef as ObjectReference)
     Debug.Trace("CLASSICAL LICHDOM: Phylactery not placed, player KILLED.", 0)
   ElseIf PlayerRef.HasMagicEffect(LichTransformRitualPotion) == 1 as Bool && (NecroLichRitualQuest as necrolichtrackingquest).Shroud < 1
@@ -239,34 +217,21 @@ Event OnUpdate()
   EndIf
   If doOnce == True && Cycles == 8
     Self.DeathEffects()
-    If RitualLocation == 1
-      NecroLichTransformationPhylacteryFX001.enable(False)
-      PlayerRef.placeAtMe(TransformFXExplosion as Form, 1, False, False)
-      PlayerRef.placeAtMe(TransformFXParticles as Form, 1, False, False)
-    ElseIf RitualLocation == 2
-      NecroLichTransformationPhylacteryFX002.enable(False)
-      PlayerRef.placeAtMe(TransformFXExplosion as Form, 1, False, False)
-      PlayerRef.placeAtMe(TransformFXParticles as Form, 1, False, False)
-    EndIf
+    trackingQuest.PostRitualFX.enable(False)
+    PlayerRef.placeAtMe(TransformFXExplosion as Form, 1, False, False)
+    PlayerRef.placeAtMe(TransformFXParticles as Form, 1, False, False)
   EndIf
   If doOnce == True && Cycles == 12
-    If RitualLocation == 1
-      TransformExplosion01.Play(NecroLichRitualXMarkerHeading001)
-      Utility.Wait(0.3)
-      IllusionLightMassiveImod.apply(1.0)
-      TransformExplosion02.Play(NecroLichRitualXMarkerHeading001)
-    ElseIf RitualLocation == 2
-      TransformExplosion01.Play(NecroLichRitualXMarkerHeading002)
-      Utility.Wait(0.3)
-      IllusionLightMassiveImod.apply(1.0)
-      TransformExplosion02.Play(NecroLichRitualXMarkerHeading002)
-    EndIf
+    TransformExplosion01.Play(trackingQuest.RitualMarker)
+    Utility.Wait(0.3)
+    IllusionLightMassiveImod.apply(1.0)
+    TransformExplosion02.Play(trackingQuest.RitualMarker)
   EndIf
   If doOnce == True && Cycles < 10
-    TargetVFX.Play(PlayerRef as ObjectReference, 4.7, Target)
-    CasterVFX.Play(Target, 5.9, PlayerRef as ObjectReference)
-    TargetFXS.Play(Target, 2 as Float)
-    CasterFXS.Play(Target, 3 as Float)
+    TargetVFX.Play(PlayerRef as ObjectReference, 4.7, trackingQuest.Phylactery)
+    CasterVFX.Play(trackingQuest.Phylactery, 5.9, PlayerRef as ObjectReference)
+    TargetFXS.Play(trackingQuest.Phylactery, 2 as Float)
+    CasterFXS.Play(trackingQuest.Phylactery, 3 as Float)
   EndIf
   If Cycles > 13 && Poisoned == True
     Self.UnregisterForUpdate()
@@ -274,19 +239,11 @@ Event OnUpdate()
     PlayerHP = PlayerRef.GetBaseActorValue("health")
     PlayerMG = PlayerRef.GetBaseActorValue("magicka")
     PlayerST = PlayerRef.GetBaseActorValue("stamina")
-    If RitualLocation == 1
-      TransformExplosion03.Play(NecroLichRitualXMarkerHeading001)
-    ElseIf RitualLocation == 2
-      TransformExplosion03.Play(NecroLichRitualXMarkerHeading002)
-    EndIf
+    TransformExplosion03.Play(trackingQuest.RitualMarker)
     PlayerRef.removespell(NecroLichTransformationRitual)
     PlayerRef.removespell(AbSummonMassCastBodyFX)
     Game.EnablePlayerControls(True, True, True, True, True, True, True, True, 0)
-    If RitualLocation == 1
-      PlayerRef.moveto(NecroLichRitualXMarkerHeading001, 0.0, 0.0, 0.0, True)
-    ElseIf RitualLocation == 2
-      PlayerRef.moveto(NecroLichRitualXMarkerHeading002, 0.0, 0.0, 0.0, True)
-    EndIf
+    PlayerRef.moveto(trackingQuest.RitualMarker, 0.0, 0.0, 0.0, True)
     PlayerRef.removespell(DiseaseAtaxia)
     PlayerRef.removespell(DiseaseBoneBreakFever)
     PlayerRef.removespell(DiseaseBrainRot)
@@ -303,13 +260,8 @@ Event OnUpdate()
     Utility.Wait(fDelay)
     Utility.Wait(fDelayEnd)
     MagicEffectShader.stop(PlayerRef as ObjectReference)
-    If RitualLocation == 1
-      NecroLichTransformationPhylacteryLightFX001.Disable(1 as Bool)
-      NecroLichTransformationPhylacteryFX001.enable(False)
-    ElseIf RitualLocation == 2
-      NecroLichTransformationPhylacteryLightFX002.Disable(1 as Bool)
-      NecroLichTransformationPhylacteryFX001.enable(False)
-    EndIf
+    trackingQuest.RitualFX.Disable(1 as Bool)
+    trackingQuest.PostRitualFX.enable(False)
     NecroUCLUnbindSoulCompleteMsg.Show(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
     NecroLichRitualQuest.SetStage(90)
     Utility.Wait(1.0)

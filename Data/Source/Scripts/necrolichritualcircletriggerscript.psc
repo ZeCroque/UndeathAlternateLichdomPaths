@@ -1,36 +1,27 @@
 Scriptname NecroLichRitualCircleTriggerSCRIPT extends ObjectReference  
 
-quest Property NecroLichRitualQuest  Auto
-int Property LocationNumber Auto
-string Property LocationName Auto
+Quest Property NecroLichRitualQuest  Auto
+Keyword Property UAP_PhylacteryKeyword Auto
+Keyword Property UAP_RitualMarkerKeyword Auto
+Keyword Property UAP_RitualFXKeyword Auto
+Keyword Property UAP_PostRitualFXKeyword Auto
 
-
-Event OnTriggerEnter (ObjectReference ActionRef)
-
-If ActionRef == Game.GetPlayer()
-	
-	If LocationName == "tower"
-		LocationNumber =1
-	elseIf LocationName == "sewer"
-		LocationNumber =2
-	endif
-	
-	(NecroLichRitualQuest as NecroLichTrackingQuest).InTrigger =LocationNumber
-	;debug.notification(LocationNumber)
-
-endif
-
+Event OnTriggerEnter (ObjectReference akActor)
+	If akActor == Game.GetPlayer()
+		NecroLichTrackingQuest trackingQuest = NecroLichRitualQuest as NecroLichTrackingQuest
+		trackingQuest.Phylactery = GetLinkedRef(UAP_PhylacteryKeyword)
+		trackingQuest.RitualMarker = GetLinkedRef(UAP_RitualMarkerKeyword)
+		trackingQuest.RitualFX = GetLinkedRef(UAP_RitualFXKeyword)
+		trackingQuest.PostRitualFX = GetLinkedRef(UAP_PostRitualFXKeyword)
+	EndIf
 EndEvent
 
-
-
-Event OnTriggerLeave (ObjectReference ActionRef)
-
-If ActionRef == Game.GetPlayer()
-
-	(NecroLichRitualQuest as NecroLichTrackingQuest).InTrigger =0
-	;debug.notification(LocationNumber)
-
-endif
-
+Event OnTriggerLeave (ObjectReference akActor)
+	If(akActor == Game.GetPlayer())
+		NecroLichTrackingQuest trackingQuest = NecroLichRitualQuest as NecroLichTrackingQuest
+		trackingQuest.Phylactery = None
+		trackingQuest.RitualMarker = None
+		trackingQuest.RitualFX = None
+		trackingQuest.PostRitualFX = None
+	EndIf
 EndEvent

@@ -42,12 +42,15 @@ Faction Property LichFaction Auto
 Race Property KhajiitRace Auto
 Race Property DarkElfRaceVampire Auto
 Potion Property NecroLichTransformationRitualPotion Auto
-Int Property InTrigger Auto conditional
 Race Property LichRace Auto
 Race Property NordRace Auto
 Quest Property NecroLichRitualQuest Auto
 MiscObject Property NecroLichPhylactery Auto
 Race Property ImperialRace Auto
+ObjectReference Property Phylactery Auto
+ObjectReference Property RitualMarker Auto
+ObjectReference Property RitualFX Auto
+ObjectReference Property PostRitualFX Auto
 
 ;-- Functions ---------------------------------------
 
