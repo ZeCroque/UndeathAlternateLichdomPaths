@@ -1,18 +1,18 @@
 Scriptname NecroLichRitualCircleTriggerSCRIPT extends ObjectReference  
 
 Quest Property NecroLichRitualQuest  Auto
-Keyword Property UAP_PhylacteryKeyword Auto
-Keyword Property UAP_RitualMarkerKeyword Auto
-Keyword Property UAP_RitualFXKeyword Auto
-Keyword Property UAP_PostRitualFXKeyword Auto
+Keyword Property LinkCustom01 Auto
+Keyword Property LinkCustom02 Auto
+Keyword Property LinkCustom03 Auto
+Keyword Property LinkCustom04 Auto
 
 Event OnTriggerEnter (ObjectReference akActor)
 	If akActor == Game.GetPlayer()
 		NecroLichTrackingQuest trackingQuest = NecroLichRitualQuest as NecroLichTrackingQuest
-		trackingQuest.Phylactery = GetLinkedRef(UAP_PhylacteryKeyword)
-		trackingQuest.RitualMarker = GetLinkedRef(UAP_RitualMarkerKeyword)
-		trackingQuest.RitualFX = GetLinkedRef(UAP_RitualFXKeyword)
-		trackingQuest.PostRitualFX = GetLinkedRef(UAP_PostRitualFXKeyword)
+		trackingQuest.Phylactery = GetLinkedRef(LinkCustom01)
+		trackingQuest.RitualFX = GetLinkedRef(LinkCustom02)
+		trackingQuest.PostRitualFX = GetLinkedRef(LinkCustom03)		
+		trackingQuest.RitualMarker = GetLinkedRef(LinkCustom04)
 	EndIf
 EndEvent
 
@@ -20,8 +20,8 @@ Event OnTriggerLeave (ObjectReference akActor)
 	If(akActor == Game.GetPlayer())
 		NecroLichTrackingQuest trackingQuest = NecroLichRitualQuest as NecroLichTrackingQuest
 		trackingQuest.Phylactery = None
-		trackingQuest.RitualMarker = None
 		trackingQuest.RitualFX = None
 		trackingQuest.PostRitualFX = None
+		trackingQuest.RitualMarker = None
 	EndIf
 EndEvent
