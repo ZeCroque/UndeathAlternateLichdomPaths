@@ -115,6 +115,7 @@ Quest Property NecroLichRitualQuest Auto
 MagicEffect Property AbLichNecroCooldown Auto
 Explosion Property FXDragonPriestLargeExplosion Auto
 Race Property LichRace Auto
+Quest Property UAP_CursedArtifactQuest Auto
 
 ;-- Functions ---------------------------------------
 
@@ -155,6 +156,9 @@ Event OnEffectStart(Actor Target, Actor Caster)
     ElseIf PlayerRef.GetItemCount(NecroVyngaldShroudWhite as Form) >= 1
       (NecroLichRitualQuest as necrolichtrackingquest).Shroud = 4
       NecroLichColorValue.SetValueInt(4)
+    ElseIf (UAP_CursedArtifactQuest.GetAlias(0) as ReferenceAlias).GetRef()
+      (NecroLichRitualQuest as necrolichtrackingquest).Shroud = 5
+      NecroLichColorValue.SetValueInt(1)
     Else
       (NecroLichRitualQuest as necrolichtrackingquest).Shroud = 0
     EndIf
@@ -204,6 +208,8 @@ Event OnUpdate()
       PlayerRef.removeitem(NecroVyngaldShroudBlack as Form, 1, True, None)
     ElseIf (NecroLichRitualQuest as necrolichtrackingquest).Shroud == 4
       PlayerRef.removeitem(NecroVyngaldShroudWhite as Form, 1, True, None)
+    ElseIf (NecroLichRitualQuest as necrolichtrackingquest).Shroud == 5
+      PlayerRef.RemoveItem((UAP_CursedArtifactQuest.GetAlias(0) as ReferenceAlias).GetRef(), 1, True)
     EndIf
     If (NecroLichRitualQuest as necrolichtrackingquest).Flesh == 1 as Bool
       NecroLichModelValue.SetValueInt(1)
