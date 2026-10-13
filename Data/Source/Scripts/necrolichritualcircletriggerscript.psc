@@ -7,7 +7,7 @@ Keyword Property LinkCustom03 Auto
 Keyword Property LinkCustom04 Auto
 
 Event OnTriggerEnter (ObjectReference akActor)
-	If akActor == Game.GetPlayer()
+	If(NecroLichRitualQuest.GetStage() <= 60 && akActor == Game.GetPlayer())
 		NecroLichTrackingQuest trackingQuest = NecroLichRitualQuest as NecroLichTrackingQuest
 		trackingQuest.Phylactery = GetLinkedRef(LinkCustom01)
 		trackingQuest.RitualFX = GetLinkedRef(LinkCustom02)
@@ -17,7 +17,7 @@ Event OnTriggerEnter (ObjectReference akActor)
 EndEvent
 
 Event OnTriggerLeave (ObjectReference akActor)
-	If(akActor == Game.GetPlayer())
+	If(NecroLichRitualQuest.GetStage() <= 60 && akActor == Game.GetPlayer())
 		NecroLichTrackingQuest trackingQuest = NecroLichRitualQuest as NecroLichTrackingQuest
 		trackingQuest.Phylactery = None
 		trackingQuest.RitualFX = None
