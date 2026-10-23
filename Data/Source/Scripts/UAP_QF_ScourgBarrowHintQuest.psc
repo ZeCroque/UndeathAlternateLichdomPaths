@@ -19,11 +19,8 @@ EndFunction
 Function Fragment_0()
 ;BEGIN CODE
 SetObjectiveDisplayed(0)
-LootWarlockSoulGemsNecroBonus.Revert()
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
-
-LeveledItem Property LootWarlockSoulGemsNecroBonus Auto
