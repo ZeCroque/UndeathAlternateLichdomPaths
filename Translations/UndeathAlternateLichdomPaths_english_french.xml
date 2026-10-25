@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SSTXMLRessources>
+  <Params>
+    <Addon>UndeathAlternateLichdomPaths</Addon>
+    <Source>english</Source>
+    <Dest>french</Dest>
+    <Version>2</Version>
+  </Params>
+  <Content>
+    <String List="0" sID="000002">
+      <EDID>UAP_NecromancerNote</EDID>
+      <REC>BOOK:FULL</REC>
+      <Source>Scrawled Notes</Source>
+      <Dest>Note griffonée</Dest>
+    </String>
+    <String List="0" sID="000004">
+      <EDID>NecroUCLRelocatePhylacteryQuest</EDID>
+      <REC id="3" idMax="4">QUST:NNAM</REC>
+      <Source>Place Your Phylactery On The Pedestal</Source>
+      <Dest>Placez votre phylactère sur le piédestal</Dest>
+    </String>
+    <String List="0" sID="000006">
+      <EDID>UAP_CauldronMessage</EDID>
+      <REC id="3" idMax="8">MESG:ITXT</REC>
+      <Source>Add Namira&apos;s Rot</Source>
+      <Dest>Truffe de Namira</Dest>
+    </String>
+    <String List="0" sID="000007">
+      <EDID>UAP_ValericaDialogBranchTopic</EDID>
+      <REC>DIAL:FULL</REC>
+      <Source>There is something I wish to learn. Could you teach me the art of necromancy?</Source>
+      <Dest>Il y a quelque chose que j&apos;aimerais apprendre. Pouvez-vous m&apos;enseigner l&apos;art de la nécromancie ?</Dest>
+    </String>
+    <String List="0" sID="000009">
+      <EDID>UAP_ScourgBarrowQuest</EDID>
+      <REC id="0" idMax="3">QUST:NNAM</REC>
+      <Source>Investigate Scourg Barrow</Source>
+      <Dest>Fouillez le tertre du Fléau</Dest>
+    </String>
+    <String List="0" sID="00000A">
+      <EDID>NecroUCLRelocatePhylacteryQuest</EDID>
+      <REC id="4" idMax="4">QUST:NNAM</REC>
+      <Source>Sell Your Soul To Belethor</Source>
+      <Dest>Vendez votre âme à Belethor</Dest>
+    </String>
+    <String List="0" sID="00000B">
+      <EDID>UAP_CauldronMessage</EDID>
+      <REC id="1" idMax="8">MESG:ITXT</REC>
+      <Source>Mix the ingredients</Source>
+      <Dest>Mélanger les ingrédients</Dest>
+    </String>
+    <String List="0" sID="00000C">
+      <EDID>UAP_CauldronAct</EDID>
+      <REC>ACTI:FULL</REC>
+      <Source>Cauldron</Source>
+      <Dest>Chaudron</Dest>
+    </String>
+    <String List="0" sID="00000F">
+      <EDID>UAP_EmptyVial</EDID>
+      <REC>MISC:FULL</REC>
+      <Source>Empty Vial</Source>
+      <Dest>Fiole vide</Dest>
+    </String>
+    <String List="0" sID="000010">
+      <EDID>NecroLichTransformationRitualEffect</EDID>
+      <REC>MGEF:FULL</REC>
+      <Source>Unbind Soul</Source>
+      <Dest>Libération d&apos;âme</Dest>
+    </String>
+    <String List="0" sID="000011">
+      <EDID>DLC2TTR1</EDID>
+      <REC id="1" idMax="1">QUST:NNAM</REC>
+      <Source>Talk to Neloth</Source>
+      <Dest>Parlez à Neloth</Dest>
+    </String>
+    <String List="0" sID="000013">
+      <EDID>UAP_CauldronMessage</EDID>
+      <REC id="5" idMax="8">MESG:ITXT</REC>
+      <Source>Add Bloodroot</Source>
+      <Dest>Racine sanglante</Dest>
+    </String>
+    <String List="0" sID="000015">
+      <EDID>UAP_CauldronMessage</EDID>
+      <REC id="7" idMax="8">MESG:ITXT</REC>
+      <Source>Add Skull</Source>
+      <Dest>Crâne</Dest>
+    </String>
+    <String List="0" sID="00001B">
+      <EDID>Tamriel</EDID>
+      <REC>WRLD:FULL</REC>
+      <Source>Skyrim</Source>
+      <Dest>Bordeciel</Dest>
+    </String>
+    <String List="0" sID="00001C">
+      <EDID>UAP_CauldronMessage</EDID>
+      <REC id="0" idMax="8">MESG:ITXT</REC>
+      <Source>Exit</Source>
+      <Dest>Quitter</Dest>
+    </String>
+    <String List="0" sID="00001D">
+      <EDID>UAP_ScourgBarrowHintQuest</EDID>
+      <REC>QUST:NNAM</REC>
+      <Source>Investigate the necromancer&apos;s lair in the Dragontail mountains</Source>
+      <Dest>Enquêtez sur le repaire de nécromancien dans les monts de la Queue de Dragon</Dest>
+    </String>
+    <String List="0" sID="00001F">
+      <EDID>UAP_CursedArtifactMsg</EDID>
+      <REC>MESG:FULL</REC>
+      <Source>Cursed Artifact</Source>
+      <Dest>Artefact maudit</Dest>
+    </String>
+    <String List="0" sID="000020">
+      <EDID>UAP_EnthirDialogBranchTopic</EDID>
+      <REC>DIAL:FULL</REC>
+      <Source>I want to learn more about necromancy.</Source>
+      <Dest>J&apos;aimerais en apprendre plus sur la nécromancie.</Dest>
+    </String>
+    <String List="0" sID="000022">
+      <EDID>UAP_NecroAltarChoicePromptMsg</EDID>
+      <REC id="0" idMax="1">MESG:ITXT</REC>
+      <Source>Craft Necromantic Items</Source>
+      <Dest>Fabriquer des objets nécromantiques</Dest>
+    </String>
+    <String List="0" sID="000023">
+      <EDID>DLC2TTR1</EDID>
+      <REC>QUST:FULL</REC>
+      <Source>Lost Knowledge</Source>
+      <Dest>Savoir perdu</Dest>
+    </String>
+    <String List="0" sID="000024">
+      <EDID>UAP_NecroAltarHelperNPC</EDID>
+      <REC>NPC_:FULL</REC>
+      <Source>NecroAltarHelperNPC</Source>
+      <Dest>NecroAltarHelperNPC</Dest>
+    </String>
+    <String List="0" sID="000025">
+      <EDID>NecroUCLRelocatePhylacteryQuest</EDID>
+      <REC>QUST:FULL</REC>
+      <Source>A Lich Pilgrimage</Source>
+      <Dest>Le pèlerinage d&apos;une liche</Dest>
+    </String>
+    <String List="0" sID="000026">
+      <EDID>[0600001B]</EDID>
+      <REC>INFO:RNAM</REC>
+      <Source>Then Scroug Barrow shall be my destination.</Source>
+      <Dest>Alors le tertre du Fléau sera ma destination.</Dest>
+    </String>
+    <String List="0" sID="000028">
+      <EDID>NecromancerLairTower</EDID>
+      <REC>CELL:FULL</REC>
+      <Source>Ravenscorn Spire</Source>
+      <Dest>Flèche d&apos;Âprefreux</Dest>
+    </String>
+    <String List="0" sID="000029">
+      <EDID>UAP_CauldronMessage</EDID>
+      <REC id="8" idMax="8">MESG:ITXT</REC>
+      <Source>Add Deathbell</Source>
+      <Dest>Grelot-de-la-mort</Dest>
+    </String>
+    <String List="0" sID="00002A">
+      <EDID>UAP_ValericaDialogBranch3Topic</EDID>
+      <REC>DIAL:FULL</REC>
+      <Source>Then Scroug Barrow shall be my destination.</Source>
+      <Dest>Alors le tertre du Fléau sera ma destination.</Dest>
+    </String>
+    <String List="0" sID="00002B">
+      <EDID>UAP_NecroAltarChoicePromptMsg</EDID>
+      <REC id="1" idMax="1">MESG:ITXT</REC>
+      <Source>Curse Artifact</Source>
+      <Dest>Artefact maudit</Dest>
+    </String>
+    <String List="0" sID="00002C">
+      <EDID>UAP_ScourgBarrowQuest</EDID>
+      <REC id="3" idMax="3">QUST:NNAM</REC>
+      <Source>Accomplish the dark ritual</Source>
+      <Dest>Accomplissez le ritual noir</Dest>
+    </String>
+    <String List="0" sID="00002D">
+      <EDID>UAP_CauldronMessage</EDID>
+      <REC id="6" idMax="8">MESG:ITXT</REC>
+      <Source>Add Crimson Nirnroot</Source>
+      <Dest>Racine de Nirn cramoisie</Dest>
+    </String>
+    <String List="0" sID="00002E">
+      <EDID>UAP_ScourgBarrowQuest</EDID>
+      <REC>QUST:FULL</REC>
+      <Source>Scourg Barrow</Source>
+      <Dest>Le tertre du Fléau</Dest>
+    </String>
+    <String List="0" sID="000033">
+      <EDID>UAP_CauldronMessage</EDID>
+      <REC id="4" idMax="8">MESG:ITXT</REC>
+      <Source>Add Human Heart</Source>
+      <Dest>Cœur humain</Dest>
+    </String>
+    <String List="0" sID="000034">
+      <EDID>UAP_CauldronMessage</EDID>
+      <REC id="2" idMax="8">MESG:ITXT</REC>
+      <Source>Add Nightshade</Source>
+      <Dest>Obscurcine</Dest>
+    </String>
+    <String List="0" sID="000036">
+      <EDID>SolitudeSewers01</EDID>
+      <REC>CELL:FULL</REC>
+      <Source>Solitude Sewers</Source>
+      <Dest>Égouts de Solitude</Dest>
+    </String>
+    <String List="0" sID="000037">
+      <EDID>UAP_ValericaDialogBranch2Topic</EDID>
+      <REC>DIAL:FULL</REC>
+      <Source>Then where might I begin?</Source>
+      <Dest>Alors où puis-je commencer ?</Dest>
+    </String>
+    <String List="0" sID="000038">
+      <EDID>NecroUCLRelocatePhylacteryQuest</EDID>
+      <REC id="0" idMax="4">QUST:NNAM</REC>
+      <Source>Find A New Lair For Your Phylactery</Source>
+      <Dest>Trouvez un nouveau repère pour votre phylactère</Dest>
+    </String>
+    <String List="0" sID="000039">
+      <EDID>UAP_AlchemyNote</EDID>
+      <REC>BOOK:FULL</REC>
+      <Source>Note on the Infernal Alchemy</Source>
+      <Dest>Note sur l&apos;alchimie infernale</Dest>
+    </String>
+    <String List="0" sID="00003A">
+      <EDID>NecroLichTransformationRitualEffect</EDID>
+      <REC>MGEF:DNAM</REC>
+      <Source>Recite foul and arcane incantations to unbind your soul from your own body for &lt;dur&gt; seconds in preparation for your transformation.</Source>
+      <Dest>Récitez de viles incantations arcaniques pour délier votre âme de votre propre corps durant &lt;dur&gt; secondes en vue de votre transformation.</Dest>
+    </String>
+    <String List="0" sID="00003F">
+      <EDID>UAP_EnthirDialogBranch2Topic</EDID>
+      <REC>DIAL:FULL</REC>
+      <Source>Then I&apos;ll seek out this Scroug Barrow.</Source>
+      <Dest>Alors je vais trouver ce tertre du Fléau.</Dest>
+    </String>
+    <String List="0" sID="000041">
+      <EDID>UAP_AntiochJournal04</EDID>
+      <REC>BOOK:FULL</REC>
+      <Source>Antioch&apos;s Journal - Volume 4</Source>
+      <Dest>Journal d&apos;Antioch - Volume 4</Dest>
+    </String>
+    <String List="0" sID="000043">
+      <EDID>DLC2TTR1</EDID>
+      <REC id="0" idMax="1">QUST:NNAM</REC>
+      <Source>Retrieve the Black Book</Source>
+      <Dest>Récupérez le Livre noir</Dest>
+    </String>
+    <String List="0" sID="000046">
+      <EDID>NecroCraftingEnchantingWorkbench</EDID>
+      <REC>FURN:FULL</REC>
+      <Source>Necromantic Altar</Source>
+      <Dest>Autel nécromantique</Dest>
+    </String>
+    <String List="0" sID="000047">
+      <EDID>NecroUCLRelocatePhylacteryQuest</EDID>
+      <REC id="1" idMax="4">QUST:NNAM</REC>
+      <Source>Erect A Pedestal For Your Phylactery</Source>
+      <Dest>Érigez un piédestal pour votre phylactère</Dest>
+    </String>
+    <String List="0" sID="000048">
+      <EDID>UAP_CauldronMessage</EDID>
+      <REC>MESG:FULL</REC>
+      <Source>Cauldron</Source>
+      <Dest>Chaudron</Dest>
+    </String>
+    <String List="0" sID="000049">
+      <EDID>NecroUCLRelocatePhylacteryQuest</EDID>
+      <REC id="2" idMax="4">QUST:NNAM</REC>
+      <Source>Retrieve Your Phylactery</Source>
+      <Dest>Récupérez votre phylactère</Dest>
+    </String>
+    <String List="0" sID="00004B">
+      <EDID>UAP_ScourgBarrowQuest</EDID>
+      <REC id="1" idMax="3">QUST:NNAM</REC>
+      <Source>Search Antioch&apos;s body</Source>
+      <Dest>Fouillez le corps d&apos;Antioch</Dest>
+    </String>
+    <String List="0" sID="00004C">
+      <EDID>UAP_ScourgBarrowQuest</EDID>
+      <REC id="2" idMax="3">QUST:NNAM</REC>
+      <Source>Read Antioch&apos;s Journal - Volume 4</Source>
+      <Dest>Lire le journal d&apos;Antioch - Volume 4</Dest>
+    </String>
+    <String List="0" sID="00004D">
+      <EDID>NecroQuest05MapMarker</EDID>
+      <REC>REFR:FULL</REC>
+      <Source>Dragontail Mountains</Source>
+      <Dest>Monts de la Queue du Dragon</Dest>
+    </String>
+    <String List="1" sID="000001">
+      <EDID>UAP_NecromancerNote</EDID>
+      <REC>BOOK:DESC</REC>
+      <Source>&lt;font face=&apos;$HandwrittenFont&apos;&gt;
+&lt;font size=&apos;18&apos;&gt;
+I have exhausted every tome I could lay my hands on, yet the answers I seek remain beyond my grasp. The dead obey, but I have yet to understand the true nature of the power that binds them.
+
+I have come across whispers of a forgotten tomb somewhere in the Dragontail Mountains. Scourg Barrow, they call it.
+
+They say its halls hold the accumulated wisdom of those who dared to study death itself. If even a fraction of these tales are true, then the knowledge I seek may lie within.
+
+I leave at first light. No more time shall be wasted on dusty tomes and the timid fools who fear what they cannot understand.
+
+The dead have much to teach. I need only find the right place to listen.</Source>
+      <Dest>&lt;font face=&apos;$HandwrittenFont&apos;&gt;
+&lt;font size=&apos;18&apos;&gt;
+J&apos;ai épuisé tous les grimoires sur lesquels j&apos;ai pu mettre la main, et pourtant les réponses que je cherche restent hors de ma portée. Les morts obéissent, mais j&apos;ai encore à comprendre la vraie nature des pouvoirs qui les ancres à notre réalité.
+
+J&apos;ai entendu des rumeurs à propos d&apos;une tombe quelque part dans les montagnes de la queue de Dragon. Ils l&apos;appellent le tertre du Fléau.
+
+Cette crypte contiendrait la sagesse accumulée de tout ceux qui ont osé étudier la mort elle-même. Si seulement une fraction de cette légende est vraie, alors les connaissances qui me manquent doivent évidemment s&apos;y trouver.
+
+Je vais partir à la première heure. Je ne peux plus me permettre de gaspiller mon temps avec ces tomes poussiéreux parmis ces lâches qui n&apos;osent pas mettre leurs idéaux en pratique.
+
+Les morts ont beaucoup à nous apprendre. Je dois simplement trouver le bon endroit pour écouter.</Dest>
+    </String>
+    <String List="1" sID="000005">
+      <EDID>NecroUCLRelocatePhylacteryQuest</EDID>
+      <REC id="1" idMax="6">QUST:CNAM</REC>
+      <Source>I must retrieve my phylactery before I can continue. Without my phylactery with me, I am unable to reform upon death.</Source>
+      <Dest>Je dois récupérer mon phylactère avant de pouvoir continuer. Sans lui, je ne peux pas me reformer après ma mort.</Dest>
+    </String>
+    <String List="1" sID="000008">
+      <EDID>UAP_ScourgBarrowQuest</EDID>
+      <REC id="4" idMax="4">QUST:CNAM</REC>
+      <Source>The ritual has succeeded and the gate now stands open. Antioch&apos;s suspicions were correct: the heart of a priest of Arkay was the key to unlocking the passage. Beyond lies the Black Book, its forbidden knowledge untouched by the passage of ages. I have come too far to turn back now. I should read the book and discover what secrets it holds.</Source>
+      <Dest>Le rituel a réussi et le portail est maintenant ouvert. Le raisonemment d&apos;Antioch était correct: le cœur d&apos;un prêtre d&apos;Arkay était la clé pour ouvrir le passage.
+Au delà repose le livre noir, son savoir interdit intact malgré le poids des âges. Je suis allé trop loin pour reculer maintenant. Je devrais lire ce livre et découvrir les secrets qu&apos;il renferme.</Dest>
+    </String>
+    <String List="1" sID="00000D">
+      <EDID>NecroUCLRelocatePhylacteryQuest</EDID>
+      <REC id="4" idMax="6">QUST:CNAM</REC>
+      <Source>I have rehoused my phylactery in a new lair. Henceforth, my physical form will reform at this location, should I fall in battle.</Source>
+      <Dest>J&apos;ai transféré mon phylactère dans un nouveau repaire. Dorénavant, si je venais à tomber au combat, ma forme physique se reformera à cet endroit.</Dest>
+    </String>
+    <String List="1" sID="00000E">
+      <EDID>UAP_ScourgBarrowQuest</EDID>
+      <REC id="3" idMax="4">QUST:CNAM</REC>
+      <Source>Antioch&apos;s journal reveals that he sought a Black Book hidden behind a magically sealed gate. His apprentices perished in every attempt to force it open. An altar stands before the gate, and its riddle seems to mention Arkay. Antioch intended to use the heart of an Arkay priest to unlock the passage. Perhaps I should attempt the ritual myself.</Source>
+      <Dest>Le journal d&apos;Antioch révèle qu&apos;il cherchait un livre noir caché derrière un portail scellé magiquement. Ses disciples ont péri à chaque tentative de passage en force. Un autel se dresse devant la grille, et l&apos;énigme qui y est inscrite semble mentionner Arkay. Antioch comptait utiliser le cœeur d&apos;un prêtre d&apos;Arkay pour ouvrir le passage. Je devrais peut-être tenter le rituel moi-même.</Dest>
+    </String>
+    <String List="1" sID="000012">
+      <EDID>UAP_AntiochJournal04</EDID>
+      <REC>BOOK:DESC</REC>
+      <Source>&lt;font face=&apos;$HandwrittenFont&apos;&gt;
+&lt;b&gt;Entry sixteen:&lt;/b&gt;
+
+At last, a discovery most extraordinary! The depths of these forsaken crypts have yielded a most promising lead in my search for the tome I have pursued for so long. Though I have yet to lay eyes upon it, I am convinced that the secrets I seek lie beyond the innermost gate of this ancient sanctuary. Such elaborate enchantments would scarcely have been employed to seal an empty chamber, and I can hardly imagine any other treasure that might require such formidable protection. Our attempts to force the gate open have proved disastrous, and several of my less capable apprentices have perished in the process. A regrettable waste of time, though their failures have at least spared me the trouble of repeating their mistakes. I have since turned my attention to an altar standing before the gate, upon which an inscription bears a riddle mentioning Arkay. Whoever concealed the tome here may have intended this trial to deter the unworthy, ensuring only those with sufficient resolve to pursue forbidden knowledge might claim its secrets. The riddle itself, however, has given me cause for considerable speculation. Its meaning may point toward the heart of a priest of Arkay as the means of opening the gate. An elegant solution, if my interpretation proves correct; what better instrument with which to defy the ignorant doctrines of that order than one of their own? I have dispatched my most capable apprentice to procure the heart of a priest of Arkay. I can only hope my interpretation is correct. I have no intention of sharing my apprentices&apos; fate.</Source>
+      <Dest>&lt;font face=&apos;$HandwrittenFont&apos;&gt;
+&lt;b&gt;Entrée seize:&lt;/b&gt;
+
+Enfin une découverte à la hauteur! Les profondeurs de ces cryptes abandonnées m&apos;ont fourni une piste des plus prometteuses dans la quête de ce grimoire que je recherche depuis si longtemps.
+Même si j&apos;ai encore à le voir de mes yeux, je suis convaincu que les secrets que je cherche reposent derrière ce portail en fer que nous venons de découvrir. Des enchantements aussi élaborés n&apos;auraient évidemment pas été employés pour sceller une pièce vide, et je peux difficilement imaginer autre trésor qui pourrait requérir une protection si formidable.
+Nos tentatives de forcer la grille ont été désastreuses et plusieurs de mes disciples les moins capables ont perdu la vie dans l&apos;opération. Une regrettable perte de temps. Leur échec aura néanmoins permis de de m&apos;éviter de commettre moi-même ces erreurs.
+J&apos;ai depuis porté mon attention sur un autel se dressant devant la grille, sur lequel se trouve une inscription énigmatique mentionnant Arkay. Celui qui a scellé le grimoire ici doit avoir conçu cette épreuve pour dissuader les indignes, s&apos;assurant que seuls les plus déterminés à découvrir les secrets interdits puissent prétendre à les connaître.
+L&apos;énigme en elle-même m&apos;a donné matière à de nombreuses spéculations. Sa signification pourrait indiquer que le cœur d’un prêtre d’Arkay serait le moyen d’ouvrir la porte. Une solution élégante, si mon interprétation s&apos;avère correcte; quelle meilleur moyen de défier les doctrines ignorantes de cet ordre que de sacrifier un des leurs? J&apos;ai missionné mon disciple le plus capable pour qu&apos;il obtienne ce dont j&apos;ai besoin.
+J&apos;espère que ma théorie est correcte. Je n&apos;ai aucune intention de partager la destinée de mes disciples.</Dest>
+    </String>
+    <String List="1" sID="000016">
+      <EDID>UAP_ScourgBarrowQuest</EDID>
+      <REC id="1" idMax="4">QUST:CNAM</REC>
+      <Source>I have defeated Antioch, a necromancer dwelling within Scourg Barrow. I should search his body to learn what he was plotting.</Source>
+      <Dest>J&apos;ai battu Antioch, un nécromancien qui arpentait le tertre du Fléau. Je devrais fouiller son corps pour découvrir ce qu&apos;il manigançait.</Dest>
+    </String>
+    <String List="1" sID="000017">
+      <EDID>UAP_CauldronMessage</EDID>
+      <REC>MESG:DESC</REC>
+      <Source>A cauldron with an unnatural concoction is bubbling and shimmering before you, giving off a foul stench. What would you like to do?</Source>
+      <Dest>Un chaudron avec un mélange contre-nature bouillonne et scintille devant vous, dégageant une odeur nauséabonde. Que souhaitez-vous faire ?</Dest>
+    </String>
+    <String List="1" sID="000018">
+      <EDID>UAP_MissingIngredientsMessage</EDID>
+      <REC>MESG:DESC</REC>
+      <Source>There&apos;s no ingredient to mix.</Source>
+      <Dest>Il n&apos;y a pas d&apos;ingrédients à mélanger.</Dest>
+    </String>
+    <String List="1" sID="000019">
+      <EDID>NecroUCLRelocatePhylacteryQuest</EDID>
+      <REC id="3" idMax="6">QUST:CNAM</REC>
+      <Source>I have erected a pedestal for my phylactery. I must now reshackle my phylactery to the pedestal.</Source>
+      <Dest>J&apos;ai érigé un piédestal pour mon phylactère. Je dois maintenant l&apos;y enchaîner.</Dest>
+    </String>
+    <String List="1" sID="00001A">
+      <EDID>UAP_ScourgBarrowQuest</EDID>
+      <REC id="2" idMax="4">QUST:CNAM</REC>
+      <Source>I have defeated Antioch, a necromancer dwelling within Scourg Barrow. I have found a journal among his belongings. I should read it to learn what brought him here and what he was seeking.</Source>
+      <Dest>J&apos;ai battu Antioch, un nécromancien qui arpentait le tertre du Fléau. J&apos;ai trouvé un journal parmis ses affaires. Je devrais le lire pour apprendre ce qui l&apos;a emmené ici ou ce qu&apos;il comptait y trouver.</Dest>
+    </String>
+    <String List="1" sID="00001E">
+      <EDID>UAP_ScourgBarrowQuest</EDID>
+      <REC id="0" idMax="4">QUST:CNAM</REC>
+      <Source>I have entered Scourg Barrow, an ancient crypt said to hold forgotten secrets. I should search its depths for anything of value.</Source>
+      <Dest>Je suis entré dans le tertre du Fléau, une ancienne crypte qui contiendrait des secrets oubliés. Je devrais fouiller ses profondeurs à la recherche de tout ce qui pourrait avoir de la valeur.</Dest>
+    </String>
+    <String List="1" sID="000021">
+      <EDID>NecroUCLRelocatePhylacteryQuest</EDID>
+      <REC id="2" idMax="6">QUST:CNAM</REC>
+      <Source>I have retrieved my phylactery.</Source>
+      <Dest>J&apos;ai récupéré mon phylactère.</Dest>
+    </String>
+    <String List="1" sID="00002F">
+      <EDID>UAP_MissingEmptyVial</EDID>
+      <REC>MESG:DESC</REC>
+      <Source>You need an empty vial to store the mixture.</Source>
+      <Dest>Vous avez besoin d&apos;une fiole vide pour stocker la mixture.</Dest>
+    </String>
+    <String List="1" sID="000030">
+      <EDID>DLC2TTR1</EDID>
+      <REC id="1" idMax="1">QUST:CNAM</REC>
+      <Source>I retrieved one of Hermaeus Mora&apos;s Black Books from &lt;Alias=Dungeon&gt; for Neloth.</Source>
+      <Dest>J&apos;ai retrouvé l&apos;un des Livres noirs d&apos;Hermaeus Mora à &lt;Alias=Dungeon&gt; pour Neloth.</Dest>
+    </String>
+    <String List="1" sID="000032">
+      <EDID>UAP_ArtifactYetCursedMessage</EDID>
+      <REC>MESG:DESC</REC>
+      <Source>You have already cursed an artifact for the lich ritual. You can&apos;t do it twice.</Source>
+      <Dest>Vous avez déjà maudit un artefact pour le rituel de lichification. Vous ne pouvez le faire à nouveau.</Dest>
+    </String>
+    <String List="1" sID="00003B">
+      <EDID>DLC2TTR1</EDID>
+      <REC id="0" idMax="1">QUST:CNAM</REC>
+      <Source>Neloth has located another of Hermaeus Mora&apos;s Black Books in &lt;Alias=Dungeon&gt;. He intends to read it as soon as I bring it to him.</Source>
+      <Dest>Neloth a localisé un autre Livre noir d&apos;Hermaeus Mora à &lt;Alias=Dungeon&gt;. Il souhaite le lire dès que je lui aurai rapporté.</Dest>
+    </String>
+    <String List="1" sID="00003C">
+      <EDID>NecroUCLRelocatePhylacteryQuest</EDID>
+      <REC id="5" idMax="6">QUST:CNAM</REC>
+      <Source>Belethor has offered me a price I cannot refuse. I shall serve Him and aid the store in whatever way I can.</Source>
+      <Dest>Belethor m&apos;a fait une offre que je ne peux refuser. Je vais me mettre à son service et aider l&apos;épicerie au mieux de mes capacités.</Dest>
+    </String>
+    <String List="1" sID="00003E">
+      <EDID>NecroUCLRelocatePhylacteryQuest</EDID>
+      <REC id="0" idMax="6">QUST:CNAM</REC>
+      <Source>I am vulnerable while my phylactery is unshackled. This pilgrimage may be perilous, though I have overcome far greater dangers in my mortal life.</Source>
+      <Dest>Je suis vulnérable tant que mon phylactère n&apos;est pas enchaîné. Ce pèlerinage risque d&apos;être périlleux, même si j&apos;ai déjà surmonté des dangers bien plus grands au cours de ma vie mortelle.</Dest>
+    </String>
+    <String List="1" sID="000044">
+      <EDID>UAP_NecroAltarChoicePromptMsg</EDID>
+      <REC>MESG:DESC</REC>
+      <Source>What do you want to do?</Source>
+      <Dest>Qu&apos;est-ce que vous allez faire ?</Dest>
+    </String>
+    <String List="1" sID="000045">
+      <EDID>NecroUCLRelocatePhylacteryQuest</EDID>
+      <REC id="6" idMax="6">QUST:CNAM</REC>
+      <Source>Alas, I have sold my soul to Belethor. I shall serve Him and aid the store in whatever way I can.</Source>
+      <Dest>Hélas, j&apos;ai vendu mon âme à Belethor. Je dois me mettre à son service et aider l&apos;épicerie au mieux de mes capacités.</Dest>
+    </String>
+    <String List="1" sID="00004A">
+      <EDID>UAP_AlchemyNote</EDID>
+      <REC>BOOK:DESC</REC>
+      <Source>&lt;font face=&apos;$HandwrittenFont&apos;&gt;
+&lt;font size=&apos;18&apos;&gt;
+For a successful ritual, I need to brew one of the following elixir.
+
+Namira&apos;s Corrosion:
+- Fungi touched by the Lady of Decay
+- Human skull, stripped to the bone
+- Potent bloom from the swamps of Hjaalmarch
+
+Embalming Essence:
+- Extracted human heart
+- Blood tainted root
+- Petal of the Poisoner&apos;s flower</Source>
+      <Dest>&lt;font face=&apos;$HandwrittenFont&apos;&gt;
+&lt;font size=&apos;18&apos;&gt;
+Pour un rituel réussi, je dois préparer l&apos;un des élixirs suivant:
+
+La corrosion de Namira :
+- Champignons touché par la Dame de la Putréfaction
+- Crâne humain, dépouillé jusqu&apos;à l&apos;os
+- Floraison des marais de Hjaalmarche
+
+L&apos;Essence d&apos;embaumement :
+- Coeur humain arraché
+- Herbe teintée de sang
+- Pétale de la fleur de l&apos;Empoisonneur</Dest>
+    </String>
+    <String List="2" sID="000003">
+      <EDID>[06000018]</EDID>
+      <REC id="0" idMax="1">INFO:NAM1</REC>
+      <Source>There is an old crypt in the Dragontail Mountains, known as Scourg Barrow. Few have ventured within, and even fewer have returned.</Source>
+      <Dest>Il y a une ancienne crypte dans les monts de la Queue de Dragon, que l&apos;on appelle le terte du Fléau. Peu s&apos;y sont aventurés, et encore moins en sont revenus.</Dest>
+    </String>
+    <String List="2" sID="000014">
+      <EDID>[0600001E]</EDID>
+      <REC id="0" idMax="1">INFO:NAM1</REC>
+      <Source>Then you&apos;ll want to look beyond the College. There&apos;s an old crypt in the Dragontail Mountains, Scourg Barrow.</Source>
+      <Dest>Alors il vous faudra chercher plus loin que le collège. Il y a une ancienne crypte dans les monts de la Queue de Dragon, le tertre du Fléau.</Dest>
+    </String>
+    <String List="2" sID="000027">
+      <EDID>[06000015]</EDID>
+      <REC id="0" idMax="1">INFO:NAM1</REC>
+      <Source>Teach you? No. Not here, and certainly not in a matter of moments.</Source>
+      <Dest>Vous enseigner? Non. Pas ici, et ce n&apos;est pas une chose qui se fait dans l&apos;immédiateté.</Dest>
+    </String>
+    <String List="2" sID="000031">
+      <EDID>[06000018]</EDID>
+      <REC id="1" idMax="1">INFO:NAM1</REC>
+      <Source>Yet the rumors persist that its halls hold every answer a necromancer might seek.</Source>
+      <Dest>La rumeur que cette tombe contiendrait tous les secrets qu&apos;un nécromancien puisse vouloir persiste néanmois.</Dest>
+    </String>
+    <String List="2" sID="000035">
+      <EDID>[06000021]</EDID>
+      <REC>INFO:NAM1</REC>
+      <Source>By all means. Just remember, some knowledge comes at a price. And if you happen upon anything valuable in there... well, you know where to find me.</Source>
+      <Dest>Bien. Souvenez vous toutefois que certaines connaissances requièrent des sacrifices. Et si vous trouvez quoi que ce soit de valeur là-bas... Eh bien, vous savez où me trouver.</Dest>
+    </String>
+    <String List="2" sID="00003D">
+      <EDID>[0600001E]</EDID>
+      <REC id="1" idMax="1">INFO:NAM1</REC>
+      <Source>Word has it that the place holds knowledge on just about everything a necromancer could hope to learn.</Source>
+      <Dest>La rumeur court que cet endroit renferme toute la connaissance qu&apos;un nécromancien puisse espérer apprendre.</Dest>
+    </String>
+    <String List="2" sID="000040">
+      <EDID>[0600001B]</EDID>
+      <REC>INFO:NAM1</REC>
+      <Source>Take care. Whatever lies within that barrow has endured for centuries, and I doubt it will surrender its secrets willingly.</Source>
+      <Dest>Faites attention. Quel que soit ce qui se trouve encore là bas, cela a résisté aux siècles, et je doute que ces secrets se révèlent facilement.</Dest>
+    </String>
+    <String List="2" sID="000042">
+      <EDID>[06000015]</EDID>
+      <REC id="1" idMax="1">INFO:NAM1</REC>
+      <Source>The mastery of death requires patience, knowledge, and a willingness to understand things most mortals would fear.</Source>
+      <Dest>La maîtrise de la mort requière de la patience, du savoir, et la volonté de comprendre ce qui normalement effraie les mortels.</Dest>
+    </String>
+  </Content>
+</SSTXMLRessources>
