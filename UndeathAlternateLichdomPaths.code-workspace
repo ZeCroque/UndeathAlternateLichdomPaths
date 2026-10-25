@@ -9,6 +9,10 @@
 			"path": "H:/ModOrganizer/SkyrimAE/mods/Undeath - Classical Lichdom v4/Source/Scripts"
 		},
 		{
+			"name": "MCM",
+			"path": "H:/ModOrganizer/SkyrimAE/mods/SkyUI SDK/Scripts/Source/"
+		},
+		{
 			"path": "."
 		},
 		{
@@ -23,6 +27,7 @@
 		"papyrus.fallout4.enabled": false,
         "papyrus.skyrimSpecialEdition.enabled": true,
         "papyrus.skyrimSpecialEdition.installPath": "H:/Games/steamapps/common/Skyrim Special Edition",
-        "papyrus.skyrim.enabled": false
+        "papyrus.skyrim.enabled": false,
+		"terminal.integrated.cwd": "."
 	}
 }
