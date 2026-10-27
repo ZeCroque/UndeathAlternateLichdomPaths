@@ -82,9 +82,9 @@ This mod consists of two main files :
 
 ## 8. MY OTHER MODS
 
-- [Undeath - Shouts and Hotkeys Enabled]()
-- [Soul Cairn Patches]()
-- [Prelude To Purgatory - Tweaks]()
+- [Undeath - Shouts and Hotkeys Enabled](https://www.nexusmods.com/skyrimspecialedition/mods/197101)
+- [Soul Cairn Patches](https://www.nexusmods.com/skyrimspecialedition/mods/197103)
+- [Prelude To Purgatory - Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/197104)
 
 ## 9. CREDITS
 
