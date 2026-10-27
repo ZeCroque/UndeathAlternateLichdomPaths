@@ -52,11 +52,11 @@ The mod is available in the following languages:
 
 ## 3. REQUIREMENTS
 
-[SKSE64](https://www.nexusmods.com/skyrimspecialedition/mods/30379)
-[Undeath Remastered](https://www.nexusmods.com/skyrimspecialedition/mods/6180)
-[Undeath - Classical Lichdom v4](https://www.nexusmods.com/skyrimspecialedition/mods/40802)
-[Undeath - Immersive Mountain Pass](https://www.nexusmods.com/skyrimspecialedition/mods/84544)
-[SkyUI](https://www.nexusmods.com/skyrimspecialedition/mods/12604) (if you want to use the MCM options)
+- [SKSE64](https://www.nexusmods.com/skyrimspecialedition/mods/30379)
+- [Undeath Remastered](https://www.nexusmods.com/skyrimspecialedition/mods/6180)
+- [Undeath - Classical Lichdom v4](https://www.nexusmods.com/skyrimspecialedition/mods/40802)
+- [Undeath - Immersive Mountain Pass](https://www.nexusmods.com/skyrimspecialedition/mods/84544)
+- [SkyUI](https://www.nexusmods.com/skyrimspecialedition/mods/12604) (if you want to use the MCM options)
 
 ## 4. KNOWN ISSUES
 
