@@ -93,6 +93,15 @@ This mod consists of two main files :
 - Thanks to the authors of the tools listed below
 - Thanks to xtcrefugee for answering my questions about mid/small masters on the Starfield Modding Discord
 
+*Mods used while taking screenshots:*
+- [SkyUI](https://www.nexusmods.com/skyrimspecialedition/mods/12604)
+- [SkyHUD](https://www.nexusmods.com/skyrimspecialedition/mods/463)
+- [Dear Diary Dark Mode - SkyUI Menus Replacer SE](https://www.nexusmods.com/skyrimspecialedition/mods/60837)
+- [Oblivionesque Category Icons For SkyUI SE](https://www.nexusmods.com/skyrimspecialedition/mods/29773)
+- [Quickloot IE](https://www.nexusmods.com/skyrimspecialedition/mods/120075) & [its patch for Dear Diary Dark](https://www.nexusmods.com/skyrimspecialedition/mods/137059)
+- [Flat World Map Framework (FWMF)](https://www.nexusmods.com/skyrimspecialedition/mods/29932)
+- [Skyrim and Solstheim Paper Maps by Geevee for FWMF](https://www.nexusmods.com/skyrimspecialedition/mods/63086)
+
 ## 10. TOOLS USED
 
 - Creation Kit
